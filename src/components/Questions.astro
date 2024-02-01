@@ -1,0 +1,72 @@
+---
+import { Icon } from "astro-icon/components";
+import bagette from "./../../src/icons/questions/bagette.svg";
+import dolar from "./../../src/icons/questions/dolar.svg";
+import folder from "./../../src/icons/questions/folder.svg";
+import pencil from "./../../src/icons/questions/pencil.svg";
+---
+
+<div class="max-w-screen-xl m-auto p-4 mt-40">
+  <h2
+    class="text-4xl text-gray-700 font-semibold tracking-tighter text-center pb-20"
+  >
+    Preguntas<span class="text-emerald-500"> Frecuentes.</span>
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/folder" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        ¿En que clase de proyectos trabajas?
+      </h3>
+      <p>
+        Comúnmente colaboro con Startups para proyectos de tipo SAAS, pero he
+        participado en distintos tipos de proyectos, la única límitante es la
+        imaginación.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/pencil" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        ¿Cuanto cobras por hora?
+      </h3>
+      <p>
+        Cobro 30$ por hora de desarrollo además siempre el sistema de cobro es
+        50% al inicio y al final.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/pencil" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        ¿Puedo cambiar el diseño después?
+      </h3>
+      <p>
+        Claro! solo hay que tener en cuenta que puede tener un ligero sobrecosto
+        dependiento el cambio.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/bagette" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">¿Puedes arreglar mi PC?</h3>
+      <p>
+        Por estudiar ingenieria de Software no significa que pueda arreglar tu
+        pc, bueno sí puedo, pero no por estudiar ingeniería. 😂
+      </p>
+      <div></div>
+    </div>
+  </div>
+</div>

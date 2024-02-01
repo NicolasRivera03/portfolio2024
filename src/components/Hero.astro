@@ -1,12 +1,40 @@
-<div class="grid place-content-center h-screen">
-  <div class="md:p-72 text-center flex flex-col gap-4">
-    <h1 class="text-7xl text-gray-700 font-semibold tracking-tighter">
+---
+import { Image } from "astro:assets";
+import Memonji from "./../../public/img/memonji.png";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="max-w-screen-xl m-auto p-4 grid place-content-center h-screen">
+  <div class="text-center flex flex-col items-center gap-4">
+    <!-- <Image src={Memonji} alt="" class="mb-[-60px]" /> -->
+    <h1
+      class="max-w-screen-lg text-5xl md:text-7xl text-gray-700 font-semibold tracking-tighter z-10"
+    >
       Haciendo tus <span class="text-emerald-500">Conceptos</span> en Realidades
       ✨
     </h1>
-    <h2 class="text-3xl font-light text-gray-700 tracking-tighter">
+    <h2
+      class="max-w-screen-lg text-base md:text-3xl font-light text-gray-700 tracking-tighter"
+    >
       Eleva tu presencia online con experiencia en UI/UX para obtener las
       mejores experiencias.
     </h2>
+    <div class="flex flex-col md:flex-row gap-2 items-center">
+      <a href="http://wa.link/7k74qm" target="_blank" rel="noopener noreferrer"
+        ><button
+          class="py-2 px-6 bg-emerald-500 rounded-full text-white flex items-center gap-2"
+          ><Icon name="home/whatsapp" class="text-2xl" /> Hablemos por Whatsapp</button
+        ></a
+      >
+
+      <a
+        href="https://calendly.com/riveramoranicolas/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><button class="flex items-center gap-2"
+          ><Icon name="home/calendar" class="text-2xl" /> Agenda una reunión</button
+        ></a
+      >
+    </div>
   </div>
 </div>
