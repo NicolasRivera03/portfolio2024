@@ -4,7 +4,10 @@ import Memonji from "./../../public/img/memonji.png";
 import { Icon } from "astro-icon/components";
 ---
 
-<div class="max-w-screen-xl m-auto p-4 grid place-content-center h-screen">
+<div
+  class="max-w-screen-xl m-auto p-4 grid place-content-center h-screen animate-fade-down animate-normal"
+  id="hero"
+>
   <div class="text-center flex flex-col items-center gap-4">
     <!-- <Image src={Memonji} alt="" class="mb-[-60px]" /> -->
     <h1
@@ -19,7 +22,9 @@ import { Icon } from "astro-icon/components";
       Eleva tu presencia online con experiencia en UI/UX para obtener las
       mejores experiencias.
     </h2>
-    <div class="flex flex-col md:flex-row gap-2 items-center">
+    <div
+      class="flex flex-col md:flex-row gap-2 items-center animate-pulse animate-normal"
+    >
       <a href="http://wa.link/7k74qm" target="_blank" rel="noopener noreferrer"
         ><button
           class="py-2 px-6 bg-emerald-500 rounded-full text-white flex items-center gap-2"
