@@ -1,4 +1,5 @@
 ---
+import Header from "../../components/Header.astro";
 import Hero from "../../components/Hero/en/Hero.astro";
 import Projects from "../../components/Projects.astro";
 import MyTools from "../../components/MyTools.astro";
@@ -8,18 +9,25 @@ import Questions from "../../components/Questions.astro";
 import Contact from "../../components/Contact.astro";
 import Footer from "../../components/Footer.astro";
 import { GoogleAnalytics } from "astro-analytics";
-
+import SideBar from "../../components/SideBar.astro";
 ---
 
 <Layout title="Nicolás Mora | Frontend Developer and UI/UX Designer">
   <GoogleAnalytics id="G-MWGRN6YVJX" />
-  <main>
-    <Hero />
-    <Projects />
-    <MyTools />
-    <Testimonials />
-    <Questions />
-    <Contact />
-    <Footer />
+
+  <main class="grid grid-cols-1 md:grid-cols-[20%_1fr] gap-5 max-w-7xl m-auto">
+    <div class="hidden md:block">
+      <SideBar />
+    </div>
+    <div>
+      <Header />
+      <Hero />
+      <Projects />
+      <MyTools />
+      <Testimonials />
+      <Questions />
+      <Contact />
+      <Footer />
+    </div>
   </main>
 </Layout>
