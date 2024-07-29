@@ -1,0 +1,67 @@
+---
+import { Icon } from "astro-icon/components";
+import bagette from "./../../src/icons/questions/bagette.svg";
+import dolar from "./../../src/icons/questions/dolar.svg";
+import folder from "./../../src/icons/questions/folder.svg";
+import pencil from "./../../src/icons/questions/pencil.svg";
+---
+
+<div class="max-w-screen-xl m-auto p-4 mt-40" id="questions">
+  <h2
+    class="text-4xl text-gray-700 font-semibold tracking-tighter text-center pb-20"
+  >
+  Frequently <span class="text-emerald-500"> Asked Questions.</span>
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/folder" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        What kind of projects do you work on?
+      </h3>
+      <p>
+        I commonly collaborate with startups on SaaS projects, but I have participated in various types of projects; the only limit is imagination.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/pencil" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        Do you prefer Remote, Hybrid, or On-site?
+      </h3>
+      <p>
+        The Remote modality is ideal for me; it allows me to be in constant learning and maintains a balanced life between work and study.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/pencil" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">
+        Can I change the design later?
+      </h3>
+      <p>
+        Sure! Just keep in mind that there might be a slight additional cost depending on the change.
+      </p>
+      <div></div>
+    </div>
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="rounded-full bg-blue-400 p-4">
+        <Icon name="questions/bagette" class="text-6xl text-white" />
+      </div>
+
+      <h3 class="text-4xl font-bold text-slate-700">Can you fix my PC?</h3>
+      <p>
+        Just because I studied Software Engineering doesn’t mean I can fix your PC—well, I can, but not because of my engineering degree. 😂
+      </p>
+      <div></div>
+    </div>
+  </div>
+</div>

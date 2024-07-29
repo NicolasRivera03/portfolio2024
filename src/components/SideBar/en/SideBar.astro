@@ -1,0 +1,52 @@
+---
+import emonji from "../../../../public/img/memonji.png";
+import profile from "../../../../public/img/profile.jpg";
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+---
+
+<div class="sticky top-0 py-4 rounded-2xl h-screen max-w-xl">
+  <div
+    class="flex flex-col place-content-between h-full bg-white p-8 rounded-3xl"
+  >
+    <div class="flex flex-col gap-2">
+      <div class="grid grid-cols-[1fr_30%]">
+        <p class="font-semibold text-xl leading-6">
+          <span class="font-light">Nicolás</span>
+          <br /> Mora
+        </p>
+        <div>
+          <Image src={emonji} alt="Gabrandhouse" class="aspect-square" />
+        </div>
+      </div>
+      <div class="rounded-2xl shadow-md aspect-square">
+        <Image
+          src={profile}
+          alt="Gabrandhouse"
+          class="w-full aspect-square rounded-2xl"
+        />
+      </div>
+    </div>
+
+    <div>
+      <p class="font-semibold text-slate-400">Specification</p>
+      <h2 class="font-bold text-xl">
+        Software Developer and Web Designer
+      </h2>
+    </div>
+    <div>
+      <p class="font-semibold text-slate-400">Ubication</p>
+      <h2 class="font-bold text-lg">Bogotá, Colombia</h2>
+    </div>
+
+    <div>
+      <a href="http://wa.link/7k74qm" target="_blank" rel="noopener noreferrer"
+        ><button
+          class="py-2 px-6 bg-emerald-500 rounded-full text-white flex items-center gap-2"
+        >
+        Let's work together!</button
+        ></a
+      >
+    </div>
+  </div>
+</div>

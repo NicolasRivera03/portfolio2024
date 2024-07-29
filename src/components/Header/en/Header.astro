@@ -1,0 +1,84 @@
+---
+console.log(Astro.url.pathname);
+
+const Pathname = Astro.url.pathname;
+---
+
+<div class="hidden md:block p-4 z-20 flex-no-wrap fixed top-0 w-full">
+  <menu
+    class="top-0 py-6 flex gap-2 items-center text-xl tracking-tight font-semibold text-slate-600 h-10 rounded-full animate-fade"
+  >
+    <a href="#hero" onclick="goToSection('hero')">
+      <li
+        class="hover:bg-emerald-500 hover:text-white py-2 px-6 outline outline-[0.5px] rounded-full cursor-pointer"
+      >
+        Home
+      </li>
+    </a>
+    <a href="#projects" onclick="goToSection('projects')">
+      <li
+        class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer"
+      >
+        Projects
+      </li>
+    </a>
+    <a href="#mytools" onclick="goToSection('mytools')">
+      <li
+        class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer"
+      >
+       Tools
+      </li>
+    </a>
+    <a href="#testimonials" onclick="goToSection('testimonials')">
+      <li
+        class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer"
+      >
+        Testimonials
+      </li>
+    </a>
+   
+    <a href="#contact" onclick="goToSection('contact')">
+      <li
+        class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer"
+      >
+        Contact
+      </li>
+    </a>
+
+    {
+      Pathname === "/en/" ? (
+        <a href="/">
+          <li class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer ">
+            🇪🇸
+          </li>
+        </a>
+      ) : (
+        <a href="/en/">
+          <li class="hover:bg-emerald-500 hover:text-white py-2 px-6 rounded-full cursor-pointer ">
+            🇺🇸
+          </li>
+        </a>
+      )
+    }
+  </menu>
+</div>
+
+<div class="fixed md:hidden w-full flex py-5 px-5 z-20">
+  <menu class="w-full flex place-content-end"
+    >{
+      Pathname === "/en/" ? (
+        <a href="/">
+          <li class="hover:bg-emerald-500 flex place-content-center hover:text-white w-4 py-2 px-6 rounded-full cursor-pointer border border-s-emerald-500">
+            🇪🇸
+          </li>
+        </a>
+      ) : (
+        <a href="/en/">
+          <li class="hover:bg-emerald-500 flex place-content-center hover:text-white w-4 py-2 px-6 rounded-full cursor-pointer border border-s-emerald-500">
+            🇺🇸
+          </li>
+        </a>
+      )
+    }</menu
+  >
+</div>
